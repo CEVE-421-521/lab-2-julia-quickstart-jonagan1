@@ -154,7 +154,7 @@ dropmissing!(df) # drop any missing data
 ## Plots
 
 1. Plot the hourly water levels for March 2020, using subsetting and plotting techniques from the instructions
-t_start = Dates.DateTime(2020, 03, 1, 0)
+t_start = Dates.DateTime(2020, 03, 01, 0)
 t_end = Dates.DateTime(2020, 03, 31, 23)
 df_month = @subset(df, t_start .<= :datetime .<= t_end)
 first(df_month, 3)
